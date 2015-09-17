@@ -1,0 +1,16 @@
+header {
+  background: $header-color;
+  padding: 2em;
+}
+
+header .nav-list {
+  padding-top: 1.5em;
+}
+
+header.nav-top {
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+}

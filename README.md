@@ -1,6 +1,6 @@
 Rafael Medina
 =============================
-In the spirit of sharing, I’ve decided to open-source my website rafaelmedina.com. Now you know all of my secrets.
+In the spirit of sharing, I’ve decided to open-source my website rafaelmedina.me. Now you know all of my secrets.
 
 
 ![Project Preview](preview.PNG)
