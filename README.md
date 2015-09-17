@@ -1,13 +1,9 @@
-jekyll-gulp-sass-browser-sync
+Rafael Medina
 =============================
+In the spirit of sharing, I’ve decided to open-source my website rafaelmedina.com. Now you know all of my secrets.
 
-A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
 
-Here's a 1.5min [screencast](http://quick.as/pvrslgx) showing what you get.
-
-And here's a GIF showing the CSS injecting.
-
-![GIF](http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif)
+![Project Preview](preview.png)
 
 ## System Preparation
 
