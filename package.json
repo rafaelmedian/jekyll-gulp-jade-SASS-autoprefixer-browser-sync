@@ -1,6 +1,6 @@
 {
-  "name": "browser-sync-jekyll",
-  "version": "0.0.0",
+  "name": "imrafael",
+  "version": "0.0.1",
   "description": "A project to talk about myself",
   "main": "gulpfile.js",
   "scripts": {
