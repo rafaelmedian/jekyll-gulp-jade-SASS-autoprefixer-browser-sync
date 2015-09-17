@@ -3,7 +3,7 @@ Rafael Medina
 In the spirit of sharing, I’ve decided to open-source my website rafaelmedina.com. Now you know all of my secrets.
 
 
-![Project Preview](preview.png)
+![Project Preview](preview.PNG)
 
 ## System Preparation
 
