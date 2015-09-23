@@ -1,3 +1,28 @@
+
+
+.container
+  transition: all 0.5s ease-in-out
+
+\::selection
+  background: $header-color
+  color: $text-selected
+  text-shadow: none
+
+.transistion
+  transition: all 0.5s ease-in-out
+
+.image-text
+  background-position: 0 0
+  background-repeat: no-repeat
+  display: block
+  overflow-x: hidden
+  overflow-y: hidden
+  text-indent: -9999px
+  a
+    display: block
+    height: 100%
+    width: 100%
+
 #header-logo
 	transition: fadeIn .3s ease-in-out
 	border-radius: 60px
@@ -57,7 +82,7 @@
 
 @media(min-width:992px)
 	#top
-		padding-top: 130px
+		padding-top: 0
 
 	header
 		&.nav-top

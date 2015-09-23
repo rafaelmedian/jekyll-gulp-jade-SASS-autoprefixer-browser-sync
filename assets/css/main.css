@@ -7539,6 +7539,207 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+.animated {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.animated.hinge {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05); }
+  70% {
+    -webkit-transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1); } }
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  70% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+#hi-me.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  visibility: visible; }
+
+@-webkit-keyframes bubblinger {
+  0% {
+    background-position: 0 0; }
+  16.6% {
+    background-position: -77px 0; }
+  33% {
+    background-position: -77px 0; }
+  49% {
+    background-position: -154px 0; }
+  65% {
+    background-position: -154px 0; }
+  81% {
+    background-position: -231px 0; }
+  100% {
+    background-position: -231px 0; } }
+
+@keyframes bubblinger {
+  0% {
+    background-position: 0 0; }
+  16.6% {
+    background-position: -77px 0; }
+  33% {
+    background-position: -77px 0; }
+  49% {
+    background-position: -154px 0; }
+  65% {
+    background-position: -154px 0; }
+  81% {
+    background-position: -231px 0; }
+  100% {
+    background-position: -231px 0; } }
+
+@-webkit-keyframes bubblinger-inverse {
+  0% {
+    background-position: 0 0; }
+  16.6% {
+    background-position: 77px 0; }
+  33% {
+    background-position: 77px 0; }
+  49% {
+    background-position: 154px 0; }
+  65% {
+    background-position: 154px 0; }
+  81% {
+    background-position: 231px 0; }
+  100% {
+    background-position: 231px 0; } }
+
+@keyframes bubblinger-inverse {
+  0% {
+    background-position: 0 0; }
+  16.6% {
+    background-position: 77px 0; }
+  33% {
+    background-position: 77px 0; }
+  49% {
+    background-position: 154px 0; }
+  65% {
+    background-position: 154px 0; }
+  81% {
+    background-position: 231px 0; }
+  100% {
+    background-position: 231px 0; } }
+
+@-webkit-keyframes bubblinger-vert {
+  0% {
+    background-position: 0 0; }
+  5% {
+    background-position: 0 -77px; }
+  35% {
+    background-position: 0 -77px; }
+  40% {
+    background-position: 0 -154px; }
+  68% {
+    background-position: 0 -154px; }
+  73% {
+    background-position: 0 -231px; }
+  100% {
+    background-position: 0 -231px; } }
+
+@keyframes bubblinger-vert {
+  0% {
+    background-position: 0 0; }
+  5% {
+    background-position: 0 -77px; }
+  35% {
+    background-position: 0 -77px; }
+  40% {
+    background-position: 0 -154px; }
+  68% {
+    background-position: 0 -154px; }
+  73% {
+    background-position: 0 -231px; }
+  100% {
+    background-position: 0 -231px; } }
+
+@-webkit-keyframes bubblinger-vert-down {
+  0% {
+    background-position: 0 0; }
+  5% {
+    background-position: 0 77px; }
+  35% {
+    background-position: 0 77px; }
+  40% {
+    background-position: 0 154px; }
+  68% {
+    background-position: 0 154px; }
+  73% {
+    background-position: 0 231px; }
+  100% {
+    background-position: 0 231px; } }
+
+@keyframes bubblinger-vert-down {
+  0% {
+    background-position: 0 0; }
+  5% {
+    background-position: 0 77px; }
+  35% {
+    background-position: 0 77px; }
+  40% {
+    background-position: 0 154px; }
+  68% {
+    background-position: 0 154px; }
+  73% {
+    background-position: 0 231px; }
+  100% {
+    background-position: 0 231px; } }
+
+.container {
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out; }
+
+\::-moz-selection {
+  background: #e0ebe8;
+  color: #545454;
+  text-shadow: none; }
+
+\::selection {
+  background: #e0ebe8;
+  color: #545454;
+  text-shadow: none; }
+
+.transistion {
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out; }
+
+.image-text {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-indent: -9999px; }
+  .image-text a {
+    display: block;
+    height: 100%;
+    width: 100%; }
+
 #header-logo {
   -webkit-transition: fadeIn 0.3s ease-in-out;
           transition: fadeIn 0.3s ease-in-out;
@@ -7597,7 +7798,7 @@ body {
 
 @media (min-width: 992px) {
   #top {
-    padding-top: 130px; }
+    padding-top: 0; }
   header.nav-top {
     opacity: 0;
     position: fixed;
