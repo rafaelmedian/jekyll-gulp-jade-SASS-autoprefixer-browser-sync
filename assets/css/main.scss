@@ -1,4 +1,9 @@
 @import "0-tools/normalize";
+/**@import "0-tools/bootstrap/bootstrap";*/
+@import "0-tools/bootstrap/stylesheets/bootstrap";
+@import "0-tools/bootstrap/stylesheets/bootstrap/grid";
+@import "0-tools/bootstrap/stylesheets/bootstrap/navbar";
+@import "0-tools/bootstrap/stylesheets/bootstrap/navs";
 @import "0-tools/bourbon/bourbon";
 
 @import "1-base/vars";
