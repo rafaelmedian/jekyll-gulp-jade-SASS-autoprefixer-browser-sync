@@ -7714,12 +7714,12 @@ body {
   -webkit-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out; }
 
-\::-moz-selection {
+::-moz-selection {
   background: #e0ebe8;
   color: #545454;
   text-shadow: none; }
 
-\::selection {
+::selection {
   background: #e0ebe8;
   color: #545454;
   text-shadow: none; }
