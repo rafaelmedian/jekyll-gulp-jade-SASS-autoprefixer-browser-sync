@@ -1,5 +1,3 @@
-
-
 .container
   transition: all 0.5s ease-in-out
 
@@ -7,6 +5,7 @@
   background: $header-color
   color: $text-selected
   text-shadow: none
+
 
 .transistion
   transition: all 0.5s ease-in-out
@@ -24,44 +23,45 @@
     width: 100%
 
 #header-logo
-	transition: fadeIn .3s ease-in-out
-	border-radius: 60px
-	overflow: hidden
-	width: 72px
-	height: 72px
-	position: relative
-	margin: 0
-	padding: 0
-	span
-		display: block
+  border-radius: 60px
+  overflow: hidden
+  width: 72px
+  height: 72px
+  position: relative
+  margin: 0
+  padding: 0
+  span
+      display: block
 
-	.mask
-		background-image: $header-logo-mask
-		position: absolute
-		height: 72px
-		width: 72px
-		z-index: 1000
+  .mask
+      background-image: $header-logo-mask
+      position: absolute
+      height: 72px
+      width: 72px
+      z-index: 1000
 
-	.behind
-		background: $bg-color
-		position: absolute
-		height: 72px
-		width: 72px
-		z-index: 800
-	i
-		position: absolute
-		left: 7px
-		top: 11px
-		width: 300px
-		height: 200px
-		background: $header-logo no-repeat
-		z-index: 900
+  .behind
+      background: $bg-color
+      position: absolute
+      height: 72px
+      width: 72px
+      z-index: 800
+  i
+      background: $header-logo no-repeat
+      position: absolute
+      left: 7px
+      top: 11px
+      width: 300px
+      height: 200px
+      z-index: 900
 
-@media(-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx)
-	#header-logo.mask
-		background-image: $header-logo-mask2x
-		background-size: 72px 72px
-
+@media(-webkit-min-device-pixel-ratio:1.5),
+(min--moz-device-pixel-ratio:1.5),
+(-o-min-device-pixel-ratio:1.5),
+(min-resolution:1.5dppx)
+    #header-logo.mask
+  		background-image: $header-logo-mask2x
+  		background-size: 72px 72px
 
 #header-logo-err
 	transition: fadeIn .3s ease-in-out
@@ -76,37 +76,44 @@
 		display: block
 
 #top
-	padding-top: 0
-	overflow: hidden
-	background: $header-color
+  padding-top: 0
+  overflow: hidden
+  background: $header-color
+
 
 @media(min-width:992px)
-	#top
-		padding-top: 0
-
-	header
-		&.nav-top
-			opacity: 0
-			position: fixed
-			transition: .5s
-			top: 0
-
-		&.nav-fixed
-			box-shadow: 0 1px 1px $transparent-grey
-			opacity: .97
-			transition: all .8s
-			overflow: hidden
-			background: $white
-
-		&.nav-root
-			background: $header-color
-			box-shadow: none
-			transition: all .8s
-
-		&.headroom--unpinned
-			top: -200px
+  #top
+    padding-top: 130px
 
 
+@media(min-width:992px)
+  #top
+    padding-top: 0
+  header
+    &.nav-top
+      opacity: 0
+      position: fixed
+      transition: .5s
+      top: 0
+
+    &.nav-fixed
+      box-shadow: 0 1px 1px $transparent-grey
+      opacity: .97
+      transition: all .8s
+      overflow: hidden
+      transform: translate3d(0,0,0)
+      background: $white
+
+    &.nav-root
+      background: $header-color
+      box-shadow: none
+      transition: all .8s
+
+    &.headroom--unpinned
+      top: -200px
+  .nav-list li a
+    font-size: 150%
+    margin: 0 0 0 2em
 
 header
 	background: $header-color
@@ -132,20 +139,129 @@ header
 
 
 .nav-list li
-	display: block
-	float: left
-	a
-		display: inline-block
-		text-decoration: none
-		color: $text-color
-		font-weight: 400
-		margin: 0 0 0 1em
-		font-size: 120%
-		&:hover
-			color: $link-color
+    display: block
+    float: left
+    a
+      display: inline-block
+      text-decoration: none
+      color: $text-color
+      font-weight: 400
+      margin: 0 0 0 1em
+      &:hover
+        color: $link-color
 
-		&.active
-			color: $link-color
+      &.active
+        color: $link-color
 
-	&:first-child a
-		margin-left: 0
+    &:first-child a
+      margin-left: 0
+#earth-holder
+  margin: 0 auto
+  max-width: 800px
+  overflow: hidden
+  img
+    width: 100%
+
+.masthead-wrap
+  transition: fadeIn .5s ease-in-out
+
+
+
+h2
+  &.im-rafael
+    figure
+      max-width: 240px
+      margin: 0 auto
+      position: relative
+      z-index: 990
+    img
+      width: 100%
+      display: inline-block
+    &.work figure
+      max-width: 140px
+      margin: 0 auto
+      position: relative
+      z-index: 990
+      img
+        width: 100%
+        display: inline-block
+    &.notes
+      figure
+        max-width: 140px
+        margin: 0 auto
+        position: relative
+        z-index: 990
+      img
+        width: 100%
+        display: inline-block
+
+@media (min-width: 992px)
+  h2
+    &.im-sean figure
+      max-width: 350px
+    &.work figure
+      max-width: 200px
+    &.notes figure
+      max-width: 200px
+
+#head-slider p.header-desc
+  text-align: center
+  color: $text-color
+  padding: 1em 0
+  font-size: 180%
+  font-weight: 400
+  font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+
+#title
+  padding: .5em 0 0
+  position: relative
+  &.work-head
+    padding-bottom: 4em
+  .container
+    position: relative
+  .cloud
+    position: absolute
+    background: $cloud top left no-repeat
+    width: 150px
+    height: 45px
+    transition: all 1s ease-in-out
+    z-index: 980
+  .left-cloud
+    left: -6em
+    bottom: 2em
+  .right-cloud
+    right: -5em
+    top: 0
+  .cloud-404
+    background-image: $404-cloud
+  .left-cloud-work
+    left: -6.5em
+    bottom: 5em
+  .right-cloud-work
+    right: -5em
+    bottom: 5em
+  .left-cloud-notes
+    left: -6.5em
+    bottom: 5em
+  .right-cloud-notes
+    right: -5em
+    bottom: 5em
+  .flag
+    position: absolute
+    background: $flag top left no-repeat
+    width: 42px
+    height: 154px
+
+@media (min-width: 992px)
+  #title
+    .left-cloud
+      left: 2em
+      bottom: 5em
+    .right-cloud
+      right: 2em
+      top: 6em
+  #head-slider
+    padding: 4em 0
+
+#head-slider
+  padding: 1em 0
