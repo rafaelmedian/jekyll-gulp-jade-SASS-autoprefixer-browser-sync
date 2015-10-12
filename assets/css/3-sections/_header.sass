@@ -31,35 +31,35 @@
   margin: 0
   padding: 0
   span
-      display: block
+    display: block
 
   .mask
-      background-image: $header-logo-mask
-      position: absolute
-      height: 72px
-      width: 72px
-      z-index: 1000
+    background-image: $header-logo-mask
+    position: absolute
+    height: 72px
+    width: 72px
+    z-index: 1000
 
   .behind
-      background: $bg-color
-      position: absolute
-      height: 72px
-      width: 72px
-      z-index: 800
+    background: $bg-color
+    position: absolute
+    height: 72px
+    width: 72px
+    z-index: 800
   i
-      background: $header-logo no-repeat
-      position: absolute
-      left: 7px
-      top: 11px
-      width: 300px
-      height: 200px
-      z-index: 900
+    background: $header-logo no-repeat
+    position: absolute
+    left: 7px
+    top: 11px
+    width: 300px
+    height: 200px
+    z-index: 900
 
 @media(-webkit-min-device-pixel-ratio:1.5),
 (min--moz-device-pixel-ratio:1.5),
 (-o-min-device-pixel-ratio:1.5),
 (min-resolution:1.5dppx)
-    #header-logo.mask
+    #header-logo .mask
   		background-image: $header-logo-mask2x
   		background-size: 72px 72px
 
@@ -83,12 +83,8 @@
 
 @media(min-width:992px)
   #top
-    padding-top: 130px
-
-
-@media(min-width:992px)
-  #top
     padding-top: 0
+
   header
     &.nav-top
       opacity: 0
@@ -111,9 +107,12 @@
 
     &.headroom--unpinned
       top: -200px
+
   .nav-list li a
+    transition: all .8s
     font-size: 150%
     margin: 0 0 0 2em
+
 
 header
 	background: $header-color
@@ -163,9 +162,10 @@ header
     width: 100%
 
 .masthead-wrap
-  transition: fadeIn .5s ease-in-out
-
-
+  -webkit-animation: fadeIn .5s ease-in-out
+  -moz-transition: fadeIn .5s ease-in-out
+  -o-transition: fadeIn .5s ease-in-out
+  transition: fadeIn 0.5s ease-in-out
 
 h2
   &.im-rafael
@@ -197,7 +197,7 @@ h2
 
 @media (min-width: 992px)
   h2
-    &.im-sean figure
+    &.im-rafael figure
       max-width: 350px
     &.work figure
       max-width: 200px
@@ -233,7 +233,7 @@ h2
     right: -5em
     top: 0
   .cloud-404
-    background-image: $404-cloud
+    background-image: $cloud-404
   .left-cloud-work
     left: -6.5em
     bottom: 5em
@@ -252,16 +252,17 @@ h2
     width: 42px
     height: 154px
 
-@media (min-width: 992px)
-  #title
-    .left-cloud
-      left: 2em
-      bottom: 5em
-    .right-cloud
-      right: 2em
-      top: 6em
-  #head-slider
-    padding: 4em 0
-
 #head-slider
   padding: 1em 0
+
+@media (min-width: 992px)
+  #title .right-cloud
+    right: 2em
+    top: 6em
+    
+  #title .left-cloud
+    left: 2em
+    bottom: 5em
+
+  #head-slider
+    padding: 4em 0

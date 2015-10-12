@@ -7539,6 +7539,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px; } }
+
 .animated {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -7795,10 +7799,6 @@ body {
 
 @media (min-width: 992px) {
   #top {
-    padding-top: 130px; } }
-
-@media (min-width: 992px) {
-  #top {
     padding-top: 0; }
   header.nav-top {
     opacity: 0;
@@ -7823,6 +7823,8 @@ body {
   header.headroom--unpinned {
     top: -200px; }
   .nav-list li a {
+    -webkit-transition: all 0.8s;
+            transition: all 0.8s;
     font-size: 150%;
     margin: 0 0 0 2em; } }
 
@@ -7869,6 +7871,7 @@ header {
     width: 100%; }
 
 .masthead-wrap {
+  -webkit-animation: fadeIn 0.5s ease-in-out;
   -webkit-transition: fadeIn 0.5s ease-in-out;
           transition: fadeIn 0.5s ease-in-out; }
 
@@ -7902,7 +7905,7 @@ h2.im-rafael.notes img {
   display: inline-block; }
 
 @media (min-width: 992px) {
-  h2.im-sean figure {
+  h2.im-rafael figure {
     max-width: 350px; }
   h2.work figure {
     max-width: 200px; }
@@ -7938,3 +7941,35 @@ h2.im-rafael.notes img {
   #title .right-cloud {
     right: -5em;
     top: 0; }
+  #title .cloud-404 {
+    background-image: url(../img/ui/404-cloud.png); }
+  #title .left-cloud-work {
+    left: -6.5em;
+    bottom: 5em; }
+  #title .right-cloud-work {
+    right: -5em;
+    bottom: 5em; }
+  #title .left-cloud-notes {
+    left: -6.5em;
+    bottom: 5em; }
+  #title .right-cloud-notes {
+    right: -5em;
+    bottom: 5em; }
+  #title .flag {
+    position: absolute;
+    background: url(../img/content/home/masthead/flag.svg) top left no-repeat;
+    width: 42px;
+    height: 154px; }
+
+#head-slider {
+  padding: 1em 0; }
+
+@media (min-width: 992px) {
+  #title .right-cloud {
+    right: 2em;
+    top: 6em; }
+  #title .left-cloud {
+    left: 2em;
+    bottom: 5em; }
+  #head-slider {
+    padding: 4em 0; } }
