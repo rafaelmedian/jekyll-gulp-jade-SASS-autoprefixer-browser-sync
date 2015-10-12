@@ -1,0 +1,62 @@
+#hello
+  z-index: 980
+  position: relative
+  padding: 3em 0 0
+  margin: 0 0 3em
+  article
+    margin: 0 auto
+    max-width: 460px
+    h3
+      text-align: center
+      padding: 0.5em 0
+    p
+      color: $text-selected
+      text-align: center
+    figure
+      margin: 0 auto
+      max-width: 150px
+      img
+        width: 100%
+
+
+@media (min-width: 922px)
+  #hello
+    padding: 6em 0 0
+    margin: 0 0 6em
+
+h3
+  font-size: 2em
+  color: $text-color
+  span
+    color: $accent-color
+
+p
+  font-size: 1.5em
+  a
+    color: $text-color
+  a:hover
+    text-decoration: none
+    color: $accent-color
+    border-bottom: 1px solid $accent-color
+
+.breaker
+  margin: 0 auto
+  max-width: 100px
+  .line
+    background-image: $line-bg
+    height: 6px
+    width: 100%
+
+@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx)
+  .breaker .line
+    background-image: $line-bg2x
+    background-size: auto 6px
+
+article
+  header
+    background: 0 0
+  h2
+    color: #1e836c
+    text-align: center
+    font-size: 3.8em
+    font-weight: 400
