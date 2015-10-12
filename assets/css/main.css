@@ -7910,7 +7910,9 @@ h2.im-rafael.notes img {
   h2.work figure {
     max-width: 200px; }
   h2.notes figure {
-    max-width: 200px; } }
+    max-width: 200px; }
+  .col-md-12 {
+    width: 100%; } }
 
 #head-slider p.header-desc {
   text-align: center;
