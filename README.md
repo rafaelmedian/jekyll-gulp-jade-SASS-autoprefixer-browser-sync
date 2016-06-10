@@ -2,9 +2,6 @@ Rafael Medina
 =============================
 In the spirit of sharing, I’ve decided to open-source  my new website rafaelmedina.me.
 
-
-![Project Preview](preview.PNG)
-
 ## System Preparation
 
 To use this starter project, you'll need the following things installed on your machine.
