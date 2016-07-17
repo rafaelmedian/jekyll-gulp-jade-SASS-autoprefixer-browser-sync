@@ -24,7 +24,7 @@ function swallowError (error) {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
+    return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'}) // remove .bat for running on MAC OS
         .on('close', done);
 });
 
