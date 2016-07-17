@@ -1,7 +1,7 @@
 Rafael Medina
 =============================
-In the spirit of sharing, I’ve decided to open-source  my new website rafaelmedina.me.
-
+An extension from the shakyShane starter kit, added a few features and jade
+[https://github.com/shakyShane/jekyll-gulp-sass-browser-sync](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync)
 ## System Preparation
 
 To use this starter project, you'll need the following things installed on your machine.
