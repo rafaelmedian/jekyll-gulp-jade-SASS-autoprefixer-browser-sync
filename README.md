@@ -1,4 +1,4 @@
-Rafael Medina
+jekyll-gulp-jade-SASS-autoprefixer-browser-sync
 =============================
 An extension from the shakyShane starter kit, added a few features and jade
 [https://github.com/shakyShane/jekyll-gulp-sass-browser-sync](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync)
