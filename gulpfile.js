@@ -5,6 +5,8 @@ var prefix = require('gulp-autoprefixer');
 var cp = require('child_process');
 var jade = require('gulp-jade');
 
+var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
@@ -24,7 +26,7 @@ function swallowError (error) {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'}) // remove .bat for running on MAC OS
+    return cp.spawn( jekyll, ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
