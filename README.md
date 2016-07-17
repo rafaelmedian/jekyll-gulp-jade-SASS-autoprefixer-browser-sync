@@ -2,6 +2,16 @@ Rafael Medina
 =============================
 An extension from the shakyShane starter kit, added a few features and jade
 [https://github.com/shakyShane/jekyll-gulp-sass-browser-sync](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync)
+
+
+NOTE: if you are using OS X you need to remove ".bat" from the jekyll in the gulpfile
+
+```gulp.task('jekyll-build', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'}) // remove .bat for running on MAC OS
+        .on('close', done);
+});```
+
 ## System Preparation
 
 To use this starter project, you'll need the following things installed on your machine.
